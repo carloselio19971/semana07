@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+			<ul>
+				<li><a href="#definicion-rwd">Definicion  RWD</a></li>
+				<li><a href="#destopfirts">Desktop First</a></li>
+				<li><a href="#mobilefirts">Mobile First </a></li>
+				<li><a href="#mediaquery">Media Query</a></li>
+                <li><a href="#footer">Ejemplo Footer</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <main>
+        <section class="responsive-web-design-definicion" id="definicion-rwd">
+            <h1 class="titulo">Definicion RWD</h1>
+            <p>Responsive Web Desing nos permite que nuestra pagina web, aplicación sea adaptable a dispositivos moviles como tables, mobiles , etc, basado en un conjuntos de practicas para lograrlo</p>
+        </section>
+
+        <section class="responsive-web-design-enfoques">
+            <h2 class="titulo">Enfoques de Responsive Web Desing</h2>
+            <p><strong>Es importante tener encuenta que los enfoques deben estar en coordinacion con el Desing UX/UI</strong></p>
+
+            <p>Existes 2 enfoque dentro del Responsive Web Desing <strong>Desktop First y Mobile First</strong></p>
+            <article class="responsive-web-design-enfoques_desktop-first" id="destopfirts">
+                <h3 class="titulo">Desktop First</h3>
+                <p>Este enfoque nos recomienda iniciar el desarrollo <strong>desde un version de escritorio, hasta una version mobil,</strong> iniciando el proyecto desde tamñano Desktop hasta llegar al tamaño mobile</p>
+                <p>Es recomendable usar este enfoque si es que tenemos experiencia en desarrollo, ya que tendremos que ocultar algunos elementos para adaparlo a dispositos mas pequeños.<strong>Se utiliza la propiedad css (max-width)</strong> </p>
+
+                <h3 class="titulo">Ejemplo</h3>
+
+                <p>Si necesitamos realizar una diseño web para una aplicacion de farmacia y <strong>nuestro diseñador ya tiene el diseño de Desktop listo</strong> , deberiamos utilizar esta metodologia.</p>
+            </article>
+            
+            <article class="responsive-web-design-enfoques_mobile-first" id="mobilefirts">
+                <h3 class="titulo">Mobile First</h3>
+                <p>Este enfoque nos recomienda iniciar el desarrollo desde <strong>una version movil hasta una version de escritorio</strong>, es ideal para progamadores junior que recien inician , <strong>ayuda a optimizar tiempos</strong>  debido a que no tendremos que ocultar elementos como en la metdologia Desktop First</p>
+
+                <h3 class="titulo">Ejemplo</h3>
+                <p>Si queremos desarorllar una pagina web para ventas , y aun nuestro diseñador no tiene un diseño para escritorio y nosotros como desarrolladores tenemos poca experiencia, y tenemos poco tiempo para hacer el proyecto se recomienda usar este enfoque, construyendo primero el diseño para mobiles y luego ir adaptando y agregando nuevos elementos hasta que el Desktop Desing sea realizado por UX/UI</p>
+            </article>
+        </section>
+
+        <section class="responsive-desing-media-query" id="mediaquery">
+            <h2 class="titulo">Media Query</h2>
+            <p> Son puntos especificos en donde nosotros podemos establecer limites a los distitos estilos para el mismo elemento, se utilizar 2 propiedades @media para definir los <strong>limites o Break Points</strong>
+            </p>
+            <h3>Ejemplo</h3>
+            <p>Se nos indica que tenemos que tener un circulo que para un ancho maximo 600 px sea negro , luego cuando el ancho maximo sea 500 px sea  rojo y finalmente cuando el ancho maximo sea 400px se verde </p>
+            
+            <h3 style="color:black">Media Query (Max-widh:600) Negro</h3> 
+            <h3 style="color:red">Media Query (Max-widh:500) Rojo</h3>
+            <h3 style="color:green">Media Query (Max-widh:400) Verde</h3>
+
+            <div  class="ejemplo-media-query-circulo">
+            </div>
+
+            <h2 class="titulo">Ejemplo Practico Media Query enfoque Destop First</h2>
+
+            <h3>Ejemplo</h3>
+
+            <p>Tengo 4 cajas posicionadas con flex box para mi pagina web en Desktop y ahora quiero que cuando se encuentre en dispositivos mobiles , las cajas  se ponene una sola fila cuando el ancho sea menor que 500px</p>
+            <p>Cuando el elemento caja llega a un Max-widh:500 se <strong>cambiar el eje principal a columnas con la propiedad flex-direction: column;</strong> </p>
+
+            <div class="cajas">
+                <div class="caja_1 fcaja">
+
+                </div>
+                <div class="caja_2 fcaja">
+                    
+                </div>
+                <div class="caja_3 fcaja">
+                    
+                </div>
+                <div class="caja_4 fcaja">
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <p>Cuando el footer se menor de 600px de ancho se alinea en una sola fila</p>
+    <footer  id="footer">
+        <div>¿Quienes Somos?</div>
+        <div> Redes Sociales</div>
+        <div>Derechos Reservador de Autor</div>
+    </footer>
+    
+</body>
+</html>
